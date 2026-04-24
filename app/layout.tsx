@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
+import { NewsletterForm } from "../components/NewsletterForm";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -43,9 +44,12 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
 
         <footer className="border-t border-gray-200 mt-16">
-          <div className="max-w-5xl mx-auto px-4 py-8 text-sm text-gray-500 flex justify-between">
-            <span>&copy; 2026 Bokun Sport d.o.o.</span>
-            <span>Zagreb, Hrvatska</span>
+          <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+            <div className="text-sm text-gray-500">
+              <p className="mb-1">&copy; 2026 Bokun Sport d.o.o.</p>
+              <p>Zagreb, Hrvatska</p>
+            </div>
+            <NewsletterForm />
           </div>
         </footer>
 
