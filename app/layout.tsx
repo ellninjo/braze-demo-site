@@ -22,8 +22,6 @@ export default function RootLayout({
             <Link href="/" className="text-xl font-bold text-blue-700">
               Bokun Sport
             </Link>
-            {/* v2 Cards module will inject personalised content here */}
-            <div data-mk-feed className="hidden" />
             <nav className="flex gap-6 text-sm font-medium">
               <Link href="/products" className="hover:text-blue-700">
                 Proizvodi

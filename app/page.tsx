@@ -50,6 +50,15 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Personalised content cards feed — the Web SDK mounts
+          `<div data-mk-cards-root>` inside here at runtime. Empty for
+          anonymous / unqueued visitors; populated once a journey pushes
+          cards or targeting rules match. Styled as a subtle panel so the
+          empty state isn't visually disruptive. */}
+      <section className="max-w-5xl mx-auto px-4 pb-12">
+        <div data-mk-feed data-mk-slot="home" className="min-h-0" />
+      </section>
+
       {/* CTA */}
       <section className="bg-gray-50 py-12 px-4 text-center">
         <h2 className="text-xl font-bold mb-3">Spremi za novu sezonu?</h2>
