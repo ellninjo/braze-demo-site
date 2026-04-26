@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
+import { MarTechAutoInit } from "../components/MarTechAutoInit";
 import { NewsletterForm } from "../components/NewsletterForm";
 import "./globals.css";
 
@@ -59,6 +60,7 @@ export default function RootLayout({
           strategy="afterInteractive"
           data-workspace-key={process.env.NEXT_PUBLIC_MK_PUB_KEY || ""}
         />
+        <MarTechAutoInit />
       </body>
     </html>
   );
