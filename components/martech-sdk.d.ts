@@ -8,6 +8,10 @@ export {};
 declare global {
   interface Window {
     MarTech?: {
+      // Set to true once init() runs successfully. The defensive
+      // MarTechAutoInit React component reads this to skip a redundant
+      // init when the SDK's <script>-tag auto-init already worked.
+      initialized?: boolean;
       init?: (opts: { publishableKey: string; apiBase?: string }) => void;
       identify: (input: {
         email?: string;
