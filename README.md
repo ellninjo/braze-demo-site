@@ -5,7 +5,7 @@ Realistic test website for the Braze MarTech platform's Web Personalisation SDK.
 ## What this is
 
 - A small Next.js site with landing / products / pricing / about / contact pages
-- Embeds `<script src="https://braze-dusky.vercel.app/api/v1/web/pz.js">` to load the SDK
+- Embeds `<script src="https://janlio.com/api/v1/web/pz.js">` to load the SDK
 - Used for SDK testing + always-on demo environment for sales prospects
 
 ## Local development
@@ -17,7 +17,7 @@ npm run dev
 
 Environment variables (for local + Vercel):
 
-- `NEXT_PUBLIC_MK_SDK_URL` — SDK bundle URL. Defaults to `https://braze-dusky.vercel.app/api/v1/web/pz.js`
+- `NEXT_PUBLIC_MK_SDK_URL` — SDK bundle URL. Defaults to `https://janlio.com/api/v1/web/pz.js`. (Original default was `https://braze-dusky.vercel.app/api/v1/web/pz.js` — flipped in 2026-04-27 follow-up after that Vercel auto-alias died and broke the demo site. Pinned to `janlio.com` per main-repo DECISIONS 074.)
 - `NEXT_PUBLIC_MK_PUB_KEY` — Workspace publishable key (`mk_pub_...`) for the workspace whose config should drive this demo site
 
 Create a publishable key in the main platform's dashboard (Settings -> API Keys -> Type: Web SDK Key). Paste into `.env.local`.
