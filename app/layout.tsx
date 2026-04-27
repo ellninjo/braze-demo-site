@@ -55,7 +55,7 @@ export default function RootLayout({
         <Script
           src={
             process.env.NEXT_PUBLIC_MK_SDK_URL ||
-            "https://braze-dusky.vercel.app/api/v1/web/pz.js"
+            "https://janlio.com/api/v1/web/pz.js"
           }
           strategy="afterInteractive"
           data-workspace-key={process.env.NEXT_PUBLIC_MK_PUB_KEY || ""}
